@@ -357,4 +357,36 @@ body {
     font-size: 0.75rem;
     padding: 2px 4px;
   }
+  /* Hamburger Menu for Mobile */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #1f2833;
+  position: absolute;
+  top: 60px; /* below nav */
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.nav-toggle.active .hamburger:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active .hamburger:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.nav-links {
+  transition: all 0.3s ease;
+}
+
 }
