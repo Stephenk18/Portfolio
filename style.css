@@ -1972,7 +1972,7 @@ body {
     display: flex !important;
     flex-direction: column !important;
     grid-template-columns: 1fr !important;
-    gap: 10px !important;
+    gap: 16px !important;
   }
 }
 @media (max-width: 480px) {
